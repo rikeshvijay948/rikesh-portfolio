@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rikesh V - Computer Science Engineer specializing in AI automation, autonomous AI agents, computer vision, and full-stack intelligent systems. K.S.R. College of Engineering." />
+  <meta name="keywords" content="Rikesh V, Rikesh Vijay, Computer Science, AI Automation, Deep Learning, Python, FastAPI, Node.js, React, KSR College of Engineering, Portfolio" />
+  <meta name="author" content="Rikesh V" />
+  <meta name="theme-color" content="#000000" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rikesh V | Computer Science & AI Systems Engineer" />
+  <meta property="og:description" content="Driven CS undergraduate specializing in AI automation, autonomous AI agents, and intelligent system workflows." />
+
+  <title>Rikesh V — Computer Science &amp; AI Systems Engineer</title>
+
+  <!-- External Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom Professional Design System Stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Ambient Lighting Glows -->
+  <div class="apple-ambient-glow apple-glow-1" aria-hidden="true"></div>
+  <div class="apple-ambient-glow apple-glow-2" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       1. TOP SYSTEM MENU BAR
+       ========================================================================== -->
+  <div class="macos-menubar" role="navigation" aria-label="System Menu Bar">
+    <div class="menubar-left">
+      <span class="menubar-apple-logo" title="Rikesh V Portfolio"><i class="fa-solid fa-terminal"></i></span>
+      <span class="menubar-app-title">Rikesh V</span>
+      <span class="menubar-menu-item" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About</span>
+      <span class="menubar-menu-item" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})">Skills</span>
+      <span class="menubar-menu-item" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Projects</span>
+      <span class="menubar-menu-item" onclick="document.getElementById('timeline').scrollIntoView({behavior:'smooth'})">Education</span>
+      <span class="menubar-menu-item" onclick="document.getElementById('certifications').scrollIntoView({behavior:'smooth'})">Certifications</span>
+      <span class="menubar-menu-item" onclick="document.getElementById('terminal').scrollIntoView({behavior:'smooth'})">Console</span>
+      <span class="menubar-menu-item" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</span>
+    </div>
+    <div class="menubar-right">
+      <button class="menubar-icon-btn" id="spotlight-menu-trigger" title="Command Palette (Ctrl+K)">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <span class="menubar-icon-btn" title="Network Connected"><i class="fa-solid fa-wifi"></i></span>
+      <span class="menubar-icon-btn" title="System Operational"><i class="fa-solid fa-shield-halved" style="color: #30d158;"></i></span>
+      <span class="menubar-clock" id="macos-live-clock">Tue Aug 18 7:30 PM</span>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. GLASS NAVIGATION BAR
+       ========================================================================== -->
+  <header id="site-header" class="site-header">
+    <div class="container nav-container">
+      <!-- Monogram Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Rikesh V">
+        <span class="brand-badge"><i class="fa-solid fa-code"></i></span>
+        <span>Rikesh V</span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Overview</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#timeline" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certificates</a></li>
+          <li><a href="#terminal" class="nav-link">Console</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Command Palette Trigger -->
+        <button id="cmd-palette-trigger" class="spotlight-btn" type="button" aria-label="Open Command Palette">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span>Search</span>
+          <span class="kbd-badge">Ctrl K</span>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn-apple-pill">
+          <span>Get in Touch</span>
+          <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" type="button" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer">
+    <a href="#home" class="nav-link">Overview</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#timeline" class="nav-link">Education</a>
+    <a href="#certifications" class="nav-link">Certificates</a>
+    <a href="#terminal" class="nav-link">Console</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         3. HERO SECTION
+         ========================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Hero Content -->
+          <div class="hero-text-col">
+            <!-- Availability Badge -->
+            <div class="apple-pro-badge">
+              <span class="status-dot-green"></span>
+              <span>Available for AI Systems &amp; Software Engineering Roles</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="hero-headline">
+              Rikesh V.<br />
+              <span class="name-highlight">AI Automation &amp; Systems.</span>
+            </h1>
+
+            <!-- Dynamic Typing Line -->
+            <div class="apple-typing-box">
+              <span class="typing-lead">Specialization:</span>
+              <span id="typing-text" class="typing-text">Autonomous AI Agents</span>
+              <span class="typing-cursor"></span>
+            </div>
+
+            <!-- Subhead -->
+            <p class="hero-subhead">
+              Driven Computer Science undergraduate specializing in AI automation, autonomous AI agents, computer vision models, and intelligent full-stack system workflows with Python, deep learning, and modern web architectures.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn-apple-primary">
+                <span>Explore Featured Work</span>
+                <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i>
+              </a>
+              <button type="button" class="btn-apple-secondary copy-email-btn">
+                <i class="fa-regular fa-copy"></i>
+                <span>Copy Email</span>
+              </button>
+              <a href="#terminal" class="btn-apple-link">
+                <span>Open Terminal Console</span>
+                <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem;"></i>
+              </a>
+            </div>
+
+            <!-- Specs Strip -->
+            <div class="hero-specs-bar">
+              <div class="spec-item">
+                <div class="spec-number" data-target="812">8.12<span class="spec-symbol" style="font-size: 1rem; color: #a1a1a6;">/10</span></div>
+                <span class="spec-label">B.E. CGPA (KSRCE)</span>
+              </div>
+              <div class="spec-item">
+                <div class="spec-number" data-target="5">5<span class="spec-symbol">+</span></div>
+                <span class="spec-label">CERTIFICATIONS</span>
+              </div>
+              <div class="spec-item">
+                <div class="spec-number" data-target="100">100<span class="spec-symbol">%</span></div>
+                <span class="spec-label">DEDICATION</span>
+              </div>
+              <div class="spec-item">
+                <div class="spec-number" data-target="10">10<span class="spec-symbol">+</span></div>
+                <span class="spec-label">CORE TOOLS &amp; TECH</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Hero Code Viewer -->
+          <div class="hero-card-col">
+            <div id="hero-code-card" class="macos-window-card">
+              <!-- Floating Chip -->
+              <div class="apple-floating-chip">
+                <i class="fa-solid fa-robot" style="color: var(--apple-blue-light);"></i>
+                <span>AI &amp; Automation</span>
+              </div>
+
+              <!-- Window Titlebar -->
+              <div class="macos-titlebar">
+                <div class="macos-traffic-lights">
+                  <span class="traffic-light light-close"></span>
+                  <span class="traffic-light light-minimize"></span>
+                  <span class="traffic-light light-zoom"></span>
+                </div>
+                <div class="macos-tab-group">
+                  <button class="macos-tab-btn active" data-tab="developer">Rikesh.py</button>
+                  <button class="macos-tab-btn" data-tab="stack">Stack.json</button>
+                  <button class="macos-tab-btn" data-tab="philosophy">AgentPipeline.py</button>
+                </div>
+              </div>
+
+              <!-- Window Body -->
+              <div class="macos-window-body">
+                <!-- Pane 1: Rikesh.py -->
+                <div id="pane-developer" class="code-pane active">
+                  <span class="apple-kw">class</span> <span class="apple-fn">ComputerScienceStudent</span>:<br />
+                  &nbsp;&nbsp;<span class="apple-prop">name</span> = <span class="apple-str">"Rikesh V"</span><br />
+                  &nbsp;&nbsp;<span class="apple-prop">college</span> = <span class="apple-str">"K.S.R. College of Engineering"</span><br />
+                  &nbsp;&nbsp;<span class="apple-prop">degree</span> = <span class="apple-str">"B.E. Computer Science (2024-2028)"</span><br />
+                  &nbsp;&nbsp;<span class="apple-prop">cgpa</span> = <span class="apple-bool">8.12</span><br />
+                  &nbsp;&nbsp;<span class="apple-prop">specializations</span> = [<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="apple-str">"AI Automation &amp; Autonomous Agents"</span>,<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="apple-str">"Computer Vision &amp; Deep Learning"</span>,<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="apple-str">"Intelligent System Workflows"</span><br />
+                  &nbsp;&nbsp;]<br /><br />
+                  <span class="apple-comment"># Passionate about automated &amp; self-learning systems</span>
+                </div>
+
+                <!-- Pane 2: Stack.json -->
+                <div id="pane-stack" class="code-pane">
+                  {<br />
+                  &nbsp;&nbsp;<span class="apple-prop">"languages"</span>: [<span class="apple-str">"Python"</span>, <span class="apple-str">"C"</span>, <span class="apple-str">"Java"</span>, <span class="apple-str">"JavaScript"</span>],<br />
+                  &nbsp;&nbsp;<span class="apple-prop">"ai_and_ml"</span>: [<span class="apple-str">"Deep Learning"</span>, <span class="apple-str">"Computer Vision"</span>, <span class="apple-str">"PyTorch/TensorFlow"</span>, <span class="apple-str">"AI Agents"</span>],<br />
+                  &nbsp;&nbsp;<span class="apple-prop">"web_backend"</span>: [<span class="apple-str">"FastAPI"</span>, <span class="apple-str">"Node.js"</span>, <span class="apple-str">"Express.js"</span>, <span class="apple-str">"React.js"</span>, <span class="apple-str">"HTML/CSS"</span>],<br />
+                  &nbsp;&nbsp;<span class="apple-prop">"databases"</span>: [<span class="apple-str">"MongoDB Atlas"</span>, <span class="apple-str">"Firebase"</span>],<br />
+                  &nbsp;&nbsp;<span class="apple-prop">"tools"</span>: [<span class="apple-str">"VS Code"</span>, <span class="apple-str">"GitHub"</span>, <span class="apple-str">"Figma"</span>, <span class="apple-str">"Canva"</span>, <span class="apple-str">"Excel"</span>]<br />
+                  }
+                </div>
+
+                <!-- Pane 3: AgentPipeline.py -->
+                <div id="pane-philosophy" class="code-pane">
+                  <span class="apple-comment"># Intelligent System Workflow Pipeline</span><br />
+                  <span class="apple-kw">async def</span> <span class="apple-fn">run_intelligent_workflow</span>(input_data):<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;vision_features = extract_cv_features(input_data)<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;prediction = ai_agent_predict(vision_features)<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="apple-kw">return</span> dispatch_automated_response(prediction)<br /><br />
+                  <span class="apple-comment"># Resilient, Automated &amp; Accurate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. ABOUT SECTION
+         ========================================================================== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="apple-eyebrow"><i class="fa-regular fa-user"></i> Professional Profile</div>
+          <h2 class="section-title">Driven by Curiosity &amp; <span class="text-silver">AI Innovation.</span></h2>
+          <p class="section-subtitle">Bridging machine learning models, autonomous workflows, and modern web applications.</p>
+        </div>
+
+        <div class="about-bento-grid">
+          <!-- Left Persona Card -->
+          <div class="bento-card bento-persona">
+            <div class="apple-avatar-circle">RV</div>
+            <h3 class="persona-name">Rikesh V</h3>
+            <p class="persona-sub">B.E. Computer Science Engineering</p>
+
+            <div class="apple-spec-table">
+              <div class="spec-row">
+                <span class="spec-key">Institution</span>
+                <span class="spec-val">K.S.R. College of Engineering</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Graduation Year</span>
+                <span class="spec-val">2024 — 2028</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Academic CGPA</span>
+                <span class="spec-val" style="color: #30d158; font-weight: 700;">8.12 / 10</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Primary Focus</span>
+                <span class="spec-val">AI Automation &amp; Agents</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Location</span>
+                <span class="spec-val">Namakkal / Gobi, India</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Status</span>
+                <span class="spec-val" style="color: #30d158;">Placement Ready</span>
+              </div>
+            </div>
+
+            <div class="bento-social-row">
+              <a href="https://github.com/rikeshvijay948" target="_blank" rel="noopener noreferrer" class="apple-icon-btn" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/rikesh-v-63715338a" target="_blank" rel="noopener noreferrer" class="apple-icon-btn" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:rikeshvijay948@gmail.com" class="apple-icon-btn" aria-label="Email">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+              <a href="tel:+919597981194" class="apple-icon-btn" aria-label="Phone">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Narrative & Pillars Card -->
+          <div class="bento-card">
+            <div class="bento-story-text">
+              <p>
+                I am a <strong>driven Computer Science undergraduate</strong> at <strong>K.S.R. College of Engineering</strong> specializing in <strong>AI automation, autonomous AI agents, and intelligent system workflows</strong>.
+              </p>
+              <p>
+                I am passionate about building automated solutions, self-learning systems, and impactful full-stack applications. With a solid foundation in Python, C, Java, Deep Learning, and RESTful APIs, I actively develop machine learning projects like AI-based breed recognition and real-time disaster management platforms.
+              </p>
+            </div>
+
+            <!-- Mini 4-Tile Grid -->
+            <div class="bento-mini-grid">
+              <div class="bento-mini-tile">
+                <div class="mini-tile-icon"><i class="fa-solid fa-brain"></i></div>
+                <h4 class="mini-tile-title">AI &amp; Autonomous Agents</h4>
+                <p class="mini-tile-desc">Developing autonomous workflows, computer vision models, and deep learning classification systems.</p>
+              </div>
+
+              <div class="bento-mini-tile">
+                <div class="mini-tile-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <h4 class="mini-tile-title">Full-Stack Integration</h4>
+                <p class="mini-tile-desc">Building FastAPI, Node.js, Express, React, and MongoDB/Firebase backends with low latency.</p>
+              </div>
+
+              <div class="bento-mini-tile">
+                <div class="mini-tile-icon"><i class="fa-solid fa-bug-slash"></i></div>
+                <h4 class="mini-tile-title">Debugging &amp; Optimization</h4>
+                <p class="mini-tile-desc">Award-winning code debugging expertise with strong problem-solving and algorithmic logic.</p>
+              </div>
+
+              <div class="bento-mini-tile">
+                <div class="mini-tile-icon"><i class="fa-solid fa-cloud"></i></div>
+                <h4 class="mini-tile-title">IoT &amp; Cloud Fundamentals</h4>
+                <p class="mini-tile-desc">Certified in Internet of Things and Cloud Computing through NPTEL Swayam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. TECHNICAL SKILLS SECTION
+         ========================================================================== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="apple-eyebrow"><i class="fa-solid fa-sliders"></i> Technical Arsenal</div>
+          <h2 class="section-title">Core Competencies &amp; <span class="text-silver">Skills.</span></h2>
+          <p class="section-subtitle">Verified proficiencies across programming languages, AI models, backend frameworks, databases, and design tools.</p>
+        </div>
+
+        <!-- Segmented Filter Control -->
+        <div class="skills-tab-bar">
+          <button type="button" class="apple-segment-btn active" data-category="all">All Skills</button>
+          <button type="button" class="apple-segment-btn" data-category="languages">Languages</button>
+          <button type="button" class="apple-segment-btn" data-category="ai">AI &amp; Automation</button>
+          <button type="button" class="apple-segment-btn" data-category="web">Web &amp; Backend</button>
+          <button type="button" class="apple-segment-btn" data-category="database">Database</button>
+          <button type="button" class="apple-segment-btn" data-category="tools">Tools &amp; Concepts</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div id="skills-grid" class="skills-grid">
+          <!-- Python -->
+          <div class="apple-skill-card" data-category="languages">
+            <div class="skill-app-icon"><i class="fa-brands fa-python" style="color: #2997ff;"></i></div>
+            <h4 class="skill-title">Python</h4>
+            <span class="skill-domain">Core Language / ML</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 92%;"></div></div>
+          </div>
+
+          <!-- C Programming -->
+          <div class="apple-skill-card" data-category="languages">
+            <div class="skill-app-icon"><i class="fa-solid fa-c" style="color: #64d2ff;"></i></div>
+            <h4 class="skill-title">C Programming</h4>
+            <span class="skill-domain">Diploma Certified (DCP)</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 90%;"></div></div>
+          </div>
+
+          <!-- Java -->
+          <div class="apple-skill-card" data-category="languages">
+            <div class="skill-app-icon"><i class="fa-brands fa-java" style="color: #ff9f0a;"></i></div>
+            <h4 class="skill-title">Java</h4>
+            <span class="skill-domain">OOP &amp; Core Concepts</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 82%;"></div></div>
+          </div>
+
+          <!-- Autonomous AI Agents -->
+          <div class="apple-skill-card" data-category="ai">
+            <div class="skill-app-icon"><i class="fa-solid fa-robot" style="color: #30d158;"></i></div>
+            <h4 class="skill-title">Autonomous AI Agents</h4>
+            <span class="skill-domain">AI Specialization</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 88%;"></div></div>
+          </div>
+
+          <!-- Computer Vision -->
+          <div class="apple-skill-card" data-category="ai">
+            <div class="skill-app-icon"><i class="fa-solid fa-eye" style="color: #bf5af2;"></i></div>
+            <h4 class="skill-title">Computer Vision</h4>
+            <span class="skill-domain">Image Classification / CV</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 86%;"></div></div>
+          </div>
+
+          <!-- Deep Learning -->
+          <div class="apple-skill-card" data-category="ai">
+            <div class="skill-app-icon"><i class="fa-solid fa-brain" style="color: #ff375f;"></i></div>
+            <h4 class="skill-title">Deep Learning</h4>
+            <span class="skill-domain">PyTorch &amp; TensorFlow</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 85%;"></div></div>
+          </div>
+
+          <!-- HTML5 & CSS3 -->
+          <div class="apple-skill-card" data-category="web">
+            <div class="skill-app-icon"><i class="fa-brands fa-html5" style="color: #ff453a;"></i></div>
+            <h4 class="skill-title">HTML5 &amp; CSS3</h4>
+            <span class="skill-domain">Frontend Development</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 95%;"></div></div>
+          </div>
+
+          <!-- React.js -->
+          <div class="apple-skill-card" data-category="web">
+            <div class="skill-app-icon"><i class="fa-brands fa-react" style="color: #61dafb;"></i></div>
+            <h4 class="skill-title">React.js</h4>
+            <span class="skill-domain">PSG Tech Workshop</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 85%;"></div></div>
+          </div>
+
+          <!-- FastAPI -->
+          <div class="apple-skill-card" data-category="web">
+            <div class="skill-app-icon"><i class="fa-solid fa-bolt" style="color: #10b981;"></i></div>
+            <h4 class="skill-title">FastAPI</h4>
+            <span class="skill-domain">Python Async APIs</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 88%;"></div></div>
+          </div>
+
+          <!-- Node.js & Express -->
+          <div class="apple-skill-card" data-category="web">
+            <div class="skill-app-icon"><i class="fa-brands fa-node-js" style="color: #30d158;"></i></div>
+            <h4 class="skill-title">Node.js &amp; Express</h4>
+            <span class="skill-domain">RESTful Backend</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 84%;"></div></div>
+          </div>
+
+          <!-- MongoDB Atlas -->
+          <div class="apple-skill-card" data-category="database">
+            <div class="skill-app-icon"><i class="fa-solid fa-database" style="color: #30d158;"></i></div>
+            <h4 class="skill-title">MongoDB Atlas</h4>
+            <span class="skill-domain">Cloud NoSQL DB</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 86%;"></div></div>
+          </div>
+
+          <!-- Firebase -->
+          <div class="apple-skill-card" data-category="database">
+            <div class="skill-app-icon"><i class="fa-solid fa-fire" style="color: #ff9f0a;"></i></div>
+            <h4 class="skill-title">Firebase</h4>
+            <span class="skill-domain">Backend as a Service</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 84%;"></div></div>
+          </div>
+
+          <!-- Git & GitHub -->
+          <div class="apple-skill-card" data-category="tools">
+            <div class="skill-app-icon"><i class="fa-brands fa-git-alt" style="color: #ff453a;"></i></div>
+            <h4 class="skill-title">Git &amp; GitHub</h4>
+            <span class="skill-domain">Version Control</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 90%;"></div></div>
+          </div>
+
+          <!-- VS Code & Antigravity -->
+          <div class="apple-skill-card" data-category="tools">
+            <div class="skill-app-icon"><i class="fa-solid fa-code" style="color: #2997ff;"></i></div>
+            <h4 class="skill-title">VS Code &amp; Antigravity</h4>
+            <span class="skill-domain">Modern Development IDE</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 92%;"></div></div>
+          </div>
+
+          <!-- Problem Solving & Debugging -->
+          <div class="apple-skill-card" data-category="tools">
+            <div class="skill-app-icon"><i class="fa-solid fa-wand-magic-sparkles" style="color: #bf5af2;"></i></div>
+            <h4 class="skill-title">Code Debugging &amp; Opt.</h4>
+            <span class="skill-domain">Hindustan Tech Participant</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 88%;"></div></div>
+          </div>
+
+          <!-- Design: Figma & Canva -->
+          <div class="apple-skill-card" data-category="tools">
+            <div class="skill-app-icon"><i class="fa-brands fa-figma" style="color: #ff375f;"></i></div>
+            <h4 class="skill-title">Figma &amp; Canva</h4>
+            <span class="skill-domain">UI Prototyping &amp; Design</span>
+            <div class="apple-meter-track"><div class="apple-meter-fill" style="width: 85%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. FEATURED RESUME PROJECTS
+         ========================================================================== -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="apple-eyebrow"><i class="fa-solid fa-laptop-code"></i> Engineering Portfolio</div>
+          <h2 class="section-title">Resume Projects. <span class="text-silver">AI &amp; Full-Stack.</span></h2>
+          <p class="section-subtitle">Real-world systems engineered with computer vision, deep learning, RESTful backends, and role-based architectures.</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filter-strip">
+          <button type="button" class="apple-segment-btn active" data-filter="all">All Projects (4)</button>
+          <button type="button" class="apple-segment-btn" data-filter="ai">AI &amp; Deep Learning</button>
+          <button type="button" class="apple-segment-btn" data-filter="fullstack">Web &amp; Full-Stack</button>
+        </div>
+
+        <!-- Dynamic Projects Grid -->
+        <div id="projects-grid" class="projects-grid">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. EDUCATION SECTION
+         ========================================================================== -->
+    <section id="timeline">
+      <div class="container">
+        <div class="section-header">
+          <div class="apple-eyebrow"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</div>
+          <h2 class="section-title">Education &amp; <span class="text-silver">Engineering Degree.</span></h2>
+          <p class="section-subtitle">Academic focus, collegiate achievements, and core Computer Science foundation.</p>
+        </div>
+
+        <div class="timeline-card-stream">
+          <!-- Bachelor of Engineering -->
+          <div class="apple-timeline-row">
+            <span class="timeline-year-chip">Sept 2024 — Sept 2028</span>
+            <div class="timeline-text-body">
+              <h3 class="timeline-heading">Bachelor of Engineering in Computer Science (B.E. CSE)</h3>
+              <p class="timeline-subline"><strong>K.S.R. College of Engineering, Namakkal</strong></p>
+              <div style="display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; background: rgba(48, 209, 88, 0.15); border: 1px solid rgba(48, 209, 88, 0.3); border-radius: 980px; font-size: 0.8rem; font-weight: 600; color: #30d158; margin-bottom: 10px;">
+                <i class="fa-solid fa-star"></i> CGPA: 8.12 / 10
+              </div>
+              <p class="timeline-narrative">
+                Focusing on core computer science fundamentals including Data Structures, Object-Oriented Programming, Database Management Systems, Operating Systems, Machine Learning algorithms, and scalable software development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. CERTIFICATIONS & WORKSHOPS
+         ========================================================================== -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <div class="apple-eyebrow"><i class="fa-solid fa-certificate"></i> Verified Accreditations</div>
+          <h2 class="section-title">Certifications, Workshops &amp; <span class="text-silver">Events.</span></h2>
+          <p class="section-subtitle">Validated coursework, technical workshops, and competitive programming achievements from resume.</p>
+        </div>
+
+        <div class="certs-stream-grid">
+          <!-- Cert 1: NPTEL Swayam -->
+          <div class="apple-cert-tile">
+            <div class="cert-badge-icon"><i class="fa-solid fa-cloud"></i></div>
+            <div>
+              <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 2px;">Internet of Things &amp; Cloud Computing</h4>
+              <p style="font-size: 0.8rem; color: var(--apple-text-muted);">NPTEL Swayam Certification</p>
+              <span style="font-size: 0.72rem; color: var(--apple-blue-light); font-family: var(--apple-font-mono);">Credential: Completed IoT &amp; Cloud Program</span>
+            </div>
+          </div>
+
+          <!-- Cert 2: PSG Tech Workshop -->
+          <div class="apple-cert-tile">
+            <div class="cert-badge-icon"><i class="fa-brands fa-react"></i></div>
+            <div>
+              <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 2px;">Code the Web: JavaScript &amp; React in Action</h4>
+              <p style="font-size: 0.8rem; color: var(--apple-text-muted);">PSG College of Technology</p>
+              <span style="font-size: 0.72rem; color: var(--apple-blue-light); font-family: var(--apple-font-mono);">Hands-on Modern React &amp; JS Workshop</span>
+            </div>
+          </div>
+
+          <!-- Cert 3: Diploma in C (CSC) -->
+          <div class="apple-cert-tile">
+            <div class="cert-badge-icon"><i class="fa-solid fa-c"></i></div>
+            <div>
+              <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 2px;">Diploma in C Programming (DCP)</h4>
+              <p style="font-size: 0.8rem; color: var(--apple-text-muted);">Computer Software College (CSC)</p>
+              <span style="font-size: 0.72rem; color: var(--apple-blue-light); font-family: var(--apple-font-mono);">Diploma in Structured C Programming</span>
+            </div>
+          </div>
+
+          <!-- Cert 4: Hindustan Tech -->
+          <div class="apple-cert-tile">
+            <div class="cert-badge-icon"><i class="fa-solid fa-bug"></i></div>
+            <div>
+              <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 2px;">Code Debugging Competition</h4>
+              <p style="font-size: 0.8rem; color: var(--apple-text-muted);">Hindustan Institute of Technology</p>
+              <span style="font-size: 0.72rem; color: var(--apple-blue-light); font-family: var(--apple-font-mono);">Technical Event Participation</span>
+            </div>
+          </div>
+
+          <!-- Cert 5: Coursera -->
+          <div class="apple-cert-tile">
+            <div class="cert-badge-icon"><i class="fa-solid fa-table"></i></div>
+            <div>
+              <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 2px;">Introduction to Microsoft Excel</h4>
+              <p style="font-size: 0.8rem; color: var(--apple-text-muted);">Coursera Course Certificate</p>
+              <span style="font-size: 0.72rem; color: var(--apple-blue-light); font-family: var(--apple-font-mono);">Data Formatting &amp; Spreadsheet Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. INTERACTIVE DEVELOPER CONSOLE
+         ========================================================================== -->
+    <section id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <div class="apple-eyebrow"><i class="fa-solid fa-terminal"></i> Interactive Shell</div>
+          <h2 class="section-title">Developer Console — <span class="text-silver">Interactive CLI</span></h2>
+          <p class="section-subtitle">Interact with Rikesh's portfolio environment directly via standard shell commands.</p>
+        </div>
+
+        <div class="terminal-macos-card">
+          <!-- Terminal Titlebar -->
+          <div class="terminal-titlebar">
+            <div class="macos-traffic-lights">
+              <span class="traffic-light light-close"></span>
+              <span class="traffic-light light-minimize"></span>
+              <span class="traffic-light light-zoom"></span>
+            </div>
+            <div class="term-session-title">
+              <i class="fa-solid fa-terminal"></i>
+              <span>rikesh@ksrce-workstation — python/bash</span>
+            </div>
+            <span style="width: 40px;"></span>
+          </div>
+
+          <!-- Terminal Viewport -->
+          <div id="terminal-window" class="term-output-viewport" role="region" aria-live="polite">
+            <div class="term-intro">
+              Welcome to Rikesh V's developer console [K.S.R. College of Engineering].<br />
+              Type <span style="color: #2997ff;">'help'</span> to inspect available commands or click quick suggestions below.
+            </div>
+          </div>
+
+          <!-- Terminal Input Row -->
+          <form id="terminal-form" class="term-command-row" style="padding: 0 20px 16px;">
+            <span class="term-prompt-txt">rikesh@ksrce:~$</span>
+            <input type="text" id="terminal-input" class="term-native-input" autocomplete="off" spellcheck="false" placeholder="Type a command (e.g. 'help', 'skills', 'projects', 'sudo hire')..." />
+          </form>
+
+          <!-- Shortcuts Strip -->
+          <div class="term-shortcuts-strip">
+            <span class="term-shortcut-label">Quick Run:</span>
+            <button type="button" class="apple-chip-btn" data-cmd="help">help</button>
+            <button type="button" class="apple-chip-btn" data-cmd="about">about</button>
+            <button type="button" class="apple-chip-btn" data-cmd="education">education</button>
+            <button type="button" class="apple-chip-btn" data-cmd="skills">skills</button>
+            <button type="button" class="apple-chip-btn" data-cmd="projects">projects</button>
+            <button type="button" class="apple-chip-btn" data-cmd="sudo hire">sudo hire</button>
+            <button type="button" class="apple-chip-btn" data-cmd="clear">clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. CONTACT & INQUIRIES
+         ========================================================================== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="apple-eyebrow"><i class="fa-regular fa-paper-plane"></i> Direct Connect</div>
+          <h2 class="section-title">Let’s Connect. <span class="text-silver">Direct &amp; Seamless.</span></h2>
+          <p class="section-subtitle">Interested in discussing AI automation, software engineering opportunities, or placement recruitment? Reach out below.</p>
+        </div>
+
+        <div class="contact-genius-grid">
+          <!-- Left Channels Panel -->
+          <div class="contact-channels-panel">
+            <!-- Email -->
+            <div class="apple-channel-card">
+              <div class="channel-icon-circle"><i class="fa-regular fa-envelope"></i></div>
+              <div class="channel-info">
+                <span class="channel-title">Direct Email</span>
+                <p class="channel-val">rikeshvijay948@gmail.com</p>
+              </div>
+              <button type="button" class="apple-sheet-btn copy-email-btn" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="apple-channel-card">
+              <div class="channel-icon-circle"><i class="fa-solid fa-phone"></i></div>
+              <div class="channel-info">
+                <span class="channel-title">Phone / WhatsApp</span>
+                <p class="channel-val">+91 95979 81194</p>
+              </div>
+              <a href="tel:+919597981194" class="apple-sheet-btn" title="Call">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="apple-channel-card">
+              <div class="channel-icon-circle"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="channel-info">
+                <span class="channel-title">LinkedIn Profile</span>
+                <p class="channel-val">linkedin.com/in/rikesh-v-63715338a</p>
+              </div>
+              <a href="https://www.linkedin.com/in/rikesh-v-63715338a" target="_blank" rel="noopener noreferrer" class="apple-sheet-btn" title="Open LinkedIn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <!-- GitHub -->
+            <div class="apple-channel-card">
+              <div class="channel-icon-circle"><i class="fa-brands fa-github"></i></div>
+              <div class="channel-info">
+                <span class="channel-title">GitHub Repository</span>
+                <p class="channel-val">github.com/rikeshvijay948</p>
+              </div>
+              <a href="https://github.com/rikeshvijay948" target="_blank" rel="noopener noreferrer" class="apple-sheet-btn" title="Open GitHub">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Interactive Form Card -->
+          <div class="genius-form-card">
+            <div class="form-header-area">
+              <h3 class="form-header-title">Send a Direct Message</h3>
+              <p class="form-header-sub">Drafts automatically sync with your browser’s local storage.</p>
+            </div>
+
+            <form id="contact-form" class="apple-form">
+              <div class="form-split-row">
+                <div class="apple-field-group">
+                  <label for="contact-name" class="apple-label">Full Name *</label>
+                  <input type="text" id="contact-name" class="apple-input" placeholder="e.g. Hiring Manager / Jane Doe" required />
+                </div>
+                <div class="apple-field-group">
+                  <label for="contact-email" class="apple-label">Email Address *</label>
+                  <input type="email" id="contact-email" class="apple-input" placeholder="e.g. recruiter@company.com" required />
+                </div>
+              </div>
+
+              <div class="apple-field-group">
+                <label for="contact-subject" class="apple-label">Subject / Purpose *</label>
+                <input type="text" id="contact-subject" class="apple-input" placeholder="e.g. AI Engineering Opportunity / Placement Interview" required />
+              </div>
+
+              <div class="apple-field-group">
+                <label for="contact-message" class="apple-label">Message Details *</label>
+                <textarea id="contact-message" class="apple-textarea" maxlength="500" placeholder="Describe the role, project, or opportunity..." required></textarea>
+              </div>
+
+              <div class="form-bottom-row">
+                <span id="message-char-count" style="font-size: 0.75rem; color: var(--apple-text-muted); font-family: var(--apple-font-mono);">0 / 500</span>
+                <button type="submit" id="contact-submit-btn" class="btn-apple-primary">
+                  <i class="fa-regular fa-paper-plane"></i>
+                  <span>Send Message</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       11. FOOTER
+       ========================================================================== -->
+  <footer class="apple-footer">
+    <div class="container">
+      <div class="footer-inner-top">
+        <a href="#home" class="brand-logo" aria-label="Rikesh V">
+          <span class="brand-badge"><i class="fa-solid fa-code"></i></span>
+          <span>Rikesh V</span>
+        </a>
+
+        <ul class="footer-links-row">
+          <li><a href="#home">Overview</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#timeline">Education</a></li>
+          <li><a href="#certifications">Certificates</a></li>
+          <li><a href="#terminal">Console</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-inner-bottom">
+        <p>Copyright &copy; 2026 Rikesh V. B.E. Computer Science, K.S.R. College of Engineering.</p>
+        <span style="color: #30d158; display: inline-flex; align-items: center; gap: 6px;">
+          <span class="status-dot-green"></span> Placement Ready • AI Automation &amp; Intelligent Systems
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       12. COMMAND PALETTE MODAL (Ctrl + K)
+       ========================================================================== -->
+  <div id="cmd-palette-backdrop" class="spotlight-backdrop" aria-hidden="true">
+    <div class="spotlight-window" role="dialog" aria-modal="true" aria-label="Command Palette">
+      <div class="spotlight-search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="cmd-palette-input" class="spotlight-input" placeholder="Search section, project, or command (Ctrl+K)..." />
+        <span class="kbd-badge">ESC</span>
+      </div>
+      <ul id="cmd-results-list" class="spotlight-list">
+        <!-- Injected via JavaScript -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       13. PROJECT DETAILS SHEET MODAL
+       ========================================================================== -->
+  <div id="project-modal-backdrop" class="sheet-backdrop" aria-hidden="true">
+    <div class="sheet-dialog" role="dialog" aria-modal="true" aria-label="Project Details">
+      <button id="modal-close-btn" class="sheet-close-btn" type="button" aria-label="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modal-dynamic-content" class="sheet-inner">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript Engine -->
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
