@@ -1,31 +1,22 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/rikesh-portfolio/',
+  base: './',
   build: {
     target: 'esnext',
     outDir: 'dist',
     emptyOutDir: true,
     sourcemap: false,
     minify: 'terser',
-    reportCompressedSize: false,
-    rollupOptions: {
-      input: 'index.html',
-      output: {
-        entryFileNames: 'assets/[name]-[hash].js',
-        chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash][extname]'
-      }
-    }
+    reportCompressedSize: false
   },
   server: {
-    port: 3000,
-    host: '0.0.0.0'
+    port: 5173,
+    host: 'localhost',
+    open: false
   },
   preview: {
-    port: 3000,
-    host: '0.0.0.0'
+    port: 5173,
+    host: 'localhost'
   }
 })
