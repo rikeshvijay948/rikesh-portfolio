@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rikeshvijay948.github.io/rikesh-portfolio/sitemap.xml
