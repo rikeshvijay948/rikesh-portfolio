@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [1.2.1] - 2026-10-16
+
+### Added
+- **Mobile PWA & Apple Web App Meta Tags**: Support for standalone home-screen saving and iOS translucent status bar.
+- **Print Optimization**: Dedicated `@media print` styling for clean, recruiter-friendly PDF resumes and physical exports.
+- **Motion Accessibility**: `@media (prefers-reduced-motion)` honoring user motion sensitivity preferences.
+- **System Architecture Spec**: Comprehensive architectural documentation and Web Vitals metrics in `docs/ARCHITECTURE.md`.
+
 ## [1.2.0] - 2026-10-15
 
 ### Added
