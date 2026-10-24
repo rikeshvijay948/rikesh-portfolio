@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [1.2.2] - 2026-10-24
+
+### Added
+- **FormGuard Validation Integration**: Architectural documentation for FormGuard JS — an enterprise zero-dependency client-side validation system with async checks and ARIA accessibility.
+- **Security Policy (`SECURITY.md`)**: Responsible vulnerability disclosure framework and support matrix for open-source portfolio assets.
+
 ## [1.2.1] - 2026-10-16
 
 ### Added
