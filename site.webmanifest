@@ -1,0 +1,25 @@
+{
+  "name": "Rikesh V — Computer Science & AI Systems Engineer",
+  "short_name": "Rikesh V",
+  "description": "Portfolio of Rikesh V - Specializing in AI Automation, Autonomous AI Agents, Computer Vision, and Full-Stack Systems. B.E. CSE, K.S.R. College of Engineering.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "categories": [
+    "portfolio",
+    "technology",
+    "education",
+    "developer"
+  ],
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
