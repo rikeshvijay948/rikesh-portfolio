@@ -169,16 +169,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section[id]');
     const mobileToggle = document.getElementById('mobile-nav-toggle');
     const mobileDrawer = document.getElementById('mobile-drawer');
+    const progressBar = document.getElementById('scroll-progress-indicator');
+    const backToTopBtn = document.getElementById('back-to-top-btn');
 
     const handleScroll = () => {
-      if (window.scrollY > 30) {
+      const scrollY = window.scrollY;
+
+      if (scrollY > 30) {
         header?.classList.add('scrolled');
       } else {
         header?.classList.remove('scrolled');
       }
 
+      // Update Reading & Scroll Progress Indicator
+      if (progressBar) {
+        const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = totalScroll > 0 ? (scrollY / totalScroll) * 100 : 0;
+        progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+      }
+
+      // Toggle Back to Top Action Button
+      if (backToTopBtn) {
+        if (scrollY > 400) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+      }
+
       let currentSectionId = '';
-      const scrollPosition = window.scrollY + 140;
+      const scrollPosition = scrollY + 140;
 
       sections.forEach(section => {
         const top = section.offsetTop;
@@ -198,6 +218,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
+
+    backToTopBtn?.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 
     if (mobileToggle && mobileDrawer) {
       mobileToggle.addEventListener('click', () => {
