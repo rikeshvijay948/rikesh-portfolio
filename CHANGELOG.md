@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [1.2.3] - 2026-11-01
+
+### Added
+- **PWA Web App Manifest (`site.webmanifest`)**: Added official web app manifest and custom terminal-monogram SVG favicon (`favicon.svg`) with maskable icon support.
+- **Reading & Scroll Progress Indicator**: Fixed gradient reading progress tracker across top of viewport updating fluidly on scroll.
+- **Floating Back-to-Top Action**: Apple-style floating action pill button appearing at 400px scroll threshold with smooth return animation.
+- **Hero Code Inspector Copy Action**: Integrated 1-click clipboard copy button on the macOS window title bar with active-pane code extraction and toast notification feedback.
+
 ## [1.2.2] - 2026-10-24
 
 ### Added
