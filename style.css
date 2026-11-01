@@ -706,6 +706,25 @@ section {
   color: var(--apple-text-primary);
 }
 
+.macos-copy-code-btn {
+  background: transparent;
+  border: none;
+  color: var(--apple-text-muted);
+  font-size: 0.82rem;
+  padding: 4px 8px;
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s var(--apple-ease);
+}
+
+.macos-copy-code-btn:hover {
+  color: var(--apple-text-primary);
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .macos-window-body {
   padding: 20px;
   font-family: var(--apple-font-mono);

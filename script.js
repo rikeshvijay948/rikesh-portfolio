@@ -259,6 +259,24 @@ document.addEventListener('DOMContentLoaded', () => {
         if (activePane) activePane.classList.add('active');
       });
     });
+
+    const copyCodeBtn = document.getElementById('copy-hero-code-btn');
+    copyCodeBtn?.addEventListener('click', () => {
+      const activePane = document.querySelector('.code-pane.active');
+      if (!activePane) return;
+      const codeText = activePane.innerText || activePane.textContent || '';
+      navigator.clipboard.writeText(codeText.trim())
+        .then(() => {
+          copyCodeBtn.innerHTML = '<i class="fa-solid fa-check" style="color: #30d158;"></i>';
+          window.showToast?.('Code snippet copied to clipboard!', 'success');
+          setTimeout(() => {
+            copyCodeBtn.innerHTML = '<i class="fa-regular fa-copy"></i>';
+          }, 2000);
+        })
+        .catch(() => {
+          window.showToast?.('Unable to copy code snippet.', 'error');
+        });
+    });
   };
 
   // ==========================================================================
