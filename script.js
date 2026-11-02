@@ -73,24 +73,44 @@ document.addEventListener('DOMContentLoaded', () => {
       architecture: 'Component-driven frontend architecture with modular state management and persistent browser storage.'
     },
     {
-      id: 'todo-list-app',
-      title: 'Interactive To-Do List & Task Management App',
+      id: 'taskflow-pro-suite',
+      title: 'Taskflow Pro — Dynamic Productivity & To-Do Suite',
       category: 'fullstack',
-      categoryLabel: 'Productivity Tool',
+      categoryLabel: 'Productivity Suite',
       status: 'Completed',
-      summary: 'Productivity task manager featuring task categorization, priority tags, search filters, completion tracking, and persistent local storage.',
+      summary: 'Dynamic multi-view productivity application featuring List, Kanban, Calendar, Eisenhower Matrix, Pomodoro focus timer, and drag & drop.',
       icon: 'fa-solid fa-list-check',
-      tags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'State Management', 'LocalStorage'],
-      demoUrl: 'https://github.com/rikeshvijay948',
-      githubUrl: 'https://github.com/rikeshvijay948',
-      overview: 'Built a clean, distraction-free task management application to help users organize daily deliverables, prioritize critical milestones, and track productivity metrics.',
+      tags: ['Vanilla JS', 'DOM Engine', 'Drag & Drop', 'Pomodoro Timer', 'Web Audio API', 'LocalStorage'],
+      demoUrl: 'https://github.com/rikeshvijay948/Taskflow-pro',
+      githubUrl: 'https://github.com/rikeshvijay948/Taskflow-pro',
+      overview: 'Engineered a full-featured, zero-dependency task management and productivity suite powered by a custom DOM manipulation engine, native drag-and-drop workflows, and interactive productivity analytics.',
       features: [
-        'Instant task creation, editing, status toggling, and deletion with smooth micro-animations',
-        'Filtering capabilities by status (All, Active, Completed) and priority levels (High, Medium, Low)',
-        'Automatic persistent synchronization with browser LocalStorage so tasks are never lost on reload',
-        'Responsive, accessible keyboard shortcuts for rapid task entry and navigation'
+        'Dynamic multi-view system: List View, Kanban Board, Month Calendar, Eisenhower 4-Quadrant Matrix, and Productivity Analytics',
+        'Integrated Pomodoro Focus Timer with audio harmonic bell chime and celebration confetti particle engine',
+        'Interactive checklist subtasks, inline instant double-click editing, and smart natural language quick-add parsing',
+        'Zero-dependency client-side architecture with persistent LocalStorage, undo stack, JSON backup, and CSV export'
       ],
-      architecture: 'Lightweight reactive DOM architecture with localized state handling and zero external dependencies.'
+      architecture: 'Pure Vanilla ES6+ reactive DOM manipulation engine with unified state store, Web Audio API sound synthesis, and LocalStorage persistence.'
+    },
+    {
+      id: 'estatehub-real-estate',
+      title: 'EstateHub — Real Estate Listing & Discovery Portal',
+      category: 'fullstack',
+      categoryLabel: 'Web & Full-Stack',
+      status: 'Completed',
+      summary: 'Modern real estate portal with multi-facet search, Grid/List view switcher, price filters, dynamic comparisons, and interactive customer reviews.',
+      icon: 'fa-solid fa-building',
+      tags: ['JavaScript', 'CSS3 Custom Props', 'LocalStorage', 'Responsive UI', 'Search & Filtering', 'Grid/List Layout'],
+      demoUrl: 'https://github.com/rikeshvijay948/EstateHub-Real-Estate-Listing-Portal',
+      githubUrl: 'https://github.com/rikeshvijay948/EstateHub-Real-Estate-Listing-Portal',
+      overview: 'Engineered a modern real estate discovery platform featuring multi-criteria filter presets, interactive property comparison table, grid/list layout switcher, and dynamic reviews system.',
+      features: [
+        'Multi-facet search and real-time filtering by price range, city, listing type, bedrooms, and amenities',
+        'Interactive Grid vs List layout switcher with persistent localStorage user preference',
+        'Side-by-side property comparison drawer with instant metric highlighting',
+        'User review and star ratings system with persistent client-side storage'
+      ],
+      architecture: 'Modular JavaScript architecture with component-driven rendering, URL search params synchronization, and responsive CSS grid/flexbox layouts.'
     }
   ];
 
@@ -485,8 +505,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="term-res-body">
           1. <strong>AI-Powered Breed Recognition for Indian Cattle & Buffaloes</strong> (Deep Learning, Computer Vision, FastAPI, React.js)<br>
           2. <strong>ResQNet — Disaster Management System</strong> (Node.js, Express.js, MongoDB Atlas, Real-time Reporting, RBAC)<br>
-          3. <strong>Modern E-Commerce Web Application</strong> (Interactive Storefront, Cart Management, Responsive UI)<br>
-          4. <strong>Interactive To-Do List & Task Management App</strong> (State Management, LocalStorage Persistence, Filters)<br>
+          3. <strong>EstateHub — Real Estate Listing & Discovery Portal</strong> (Multi-facet Search, Grid/List Layout, Property Comparisons)<br>
+          4. <strong>Taskflow Pro — Dynamic Productivity & To-Do Suite</strong> (Multi-view Kanban/Matrix/Calendar, Pomodoro Timer, DOM Engine)<br>
+          5. <strong>Modern E-Commerce Web Application</strong> (Interactive Storefront, Cart Management, Responsive UI)<br>
           <em>(Click 'Deep Dive' on any project in the portfolio to view full architecture!)</em>
         </div>`,
       certifications: () => `

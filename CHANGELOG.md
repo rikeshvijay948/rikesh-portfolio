@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [1.2.4] - 2026-11-02
+
+### Added
+- **Featured Project — Taskflow Pro Suite (`Taskflow-pro`)**:
+  - Upgraded productivity showcase to Taskflow Pro featuring dynamic multi-view architecture (List, Kanban, Month Calendar, Eisenhower Matrix, Analytics).
+  - Highlighted integrated Pomodoro Focus Timer with Web Audio API harmonic chimes, active task linking, and confetti engine.
+  - Linked official repository [rikeshvijay948/Taskflow-pro](https://github.com/rikeshvijay948/Taskflow-pro).
+- **Featured Project — EstateHub Portal (`EstateHub-Real-Estate-Listing-Portal`)**:
+  - Added EstateHub to the engineering portfolio with multi-facet filtering, Grid/List view switcher, interactive property comparison drawer, and star review system.
+  - Linked official repository [rikeshvijay948/EstateHub-Real-Estate-Listing-Portal](https://github.com/rikeshvijay948/EstateHub-Real-Estate-Listing-Portal).
+- **Interactive Terminal Updates**:
+  - Synchronized `projects` CLI command to output the updated 5-project catalog with direct deep dive inspection.
+
 ## [1.2.3] - 2026-11-01
 
 ### Added
