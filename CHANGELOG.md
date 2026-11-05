@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [1.2.5] - 2026-11-05
+
+### Added
+- **Open Source Contribution Guidelines (`CONTRIBUTING.md`)**:
+  - Detailed local development workflow, code of conduct, and pull request checklist.
+  - Conventional Commits specification for contributors and issue tracking standards.
+- **Sitemap & SEO Sync (`sitemap.xml`)**:
+  - Refreshed XML search engine indexing timestamp to ensure search crawler freshness.
+- **Package Version Sync (`package.json`)**:
+  - Synchronized package version to `1.2.5` to align with semver milestone tracking.
+
 ## [1.2.4] - 2026-11-02
 
 ### Added
