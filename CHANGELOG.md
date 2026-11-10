@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [1.2.6] - 2026-11-10
+
+### Added
+- **Deployment & CI/CD Architecture Guide (`docs/DEPLOYMENT.md`)**:
+  - Detailed documentation covering automated GitHub Pages Actions workflow, Vercel zero-config edge hosting, production verification checklist, and security policies.
+- **Sitemap & SEO Sync (`sitemap.xml`)**:
+  - Refreshed XML search indexing timestamp to ensure fresh search crawler activity.
+- **Package Version Sync (`package.json`)**:
+  - Synchronized portfolio package version to `1.2.6`.
+
 ## [1.2.5] - 2026-11-05
 
 ### Added
