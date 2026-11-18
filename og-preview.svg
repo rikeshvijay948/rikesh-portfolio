@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f" />
+      <stop offset="50%" stop-color="#111118" />
+      <stop offset="100%" stop-color="#07070a" />
+    </linearGradient>
+    <radialGradient id="glow-blue" cx="20%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#2997ff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#2997ff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow-green" cx="80%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#30d158" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#30d158" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="accent-text" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#a1a1a6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="630" fill="url(#bg-grad)" />
+  <rect width="1200" height="630" fill="url(#glow-blue)" />
+  <rect width="1200" height="630" fill="url(#glow-green)" />
+
+  <!-- Outer Glass Frame -->
+  <rect x="40" y="40" width="1120" height="550" rx="28" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="2" />
+
+  <!-- Monogram Logo Badge -->
+  <g transform="translate(90, 95)">
+    <rect width="64" height="64" rx="18" fill="rgba(41, 151, 255, 0.15)" stroke="#2997ff" stroke-width="2" />
+    <path d="M22 32 L30 24 M22 32 L30 40" stroke="#2997ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M42 32 L34 24 M42 32 L34 40" stroke="#2997ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Status Pill -->
+  <g transform="translate(175, 108)">
+    <rect width="360" height="38" rx="19" fill="rgba(48, 209, 88, 0.12)" stroke="rgba(48, 209, 88, 0.35)" stroke-width="1.5" />
+    <circle cx="22" cy="19" r="6" fill="#30d158" />
+    <text x="38" y="24" fill="#30d158" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, sans-serif" font-size="15" font-weight="600">Available for AI &amp; Software Roles</text>
+  </g>
+
+  <!-- Main Headline -->
+  <text x="90" y="235" fill="url(#accent-text)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, sans-serif" font-size="64" font-weight="800" letter-spacing="-1.5">Rikesh V.</text>
+  <text x="90" y="305" fill="#2997ff" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, sans-serif" font-size="44" font-weight="700" letter-spacing="-1">AI Automation &amp; Intelligent Systems</text>
+
+  <!-- Subtitle -->
+  <text x="90" y="365" fill="#86868b" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', Inter, sans-serif" font-size="22" font-weight="400">
+    B.E. Computer Science &amp; Engineering • K.S.R. College of Engineering • CGPA: 8.12 / 10
+  </text>
+
+  <!-- Project Badges Row -->
+  <g transform="translate(90, 420)">
+    <!-- Badge 1 -->
+    <rect x="0" y="0" width="180" height="42" rx="12" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.1)" />
+    <text x="20" y="26" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="14" font-weight="500">Cattle AI Breed Rec</text>
+
+    <!-- Badge 2 -->
+    <rect x="195" y="0" width="165" height="42" rx="12" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.1)" />
+    <text x="215" y="26" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="14" font-weight="500">ResQNet Disaster</text>
+
+    <!-- Badge 3 -->
+    <rect x="375" y="0" width="160" height="42" rx="12" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.1)" />
+    <text x="395" y="26" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="14" font-weight="500">Taskflow Pro</text>
+
+    <!-- Badge 4 -->
+    <rect x="550" y="0" width="155" height="42" rx="12" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.1)" />
+    <text x="570" y="26" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="14" font-weight="500">EstateHub Portal</text>
+
+    <!-- Badge 5 -->
+    <rect x="720" y="0" width="160" height="42" rx="12" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.1)" />
+    <text x="740" y="26" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="14" font-weight="500">E-Commerce App</text>
+  </g>
+
+  <!-- Footer Info Line -->
+  <g transform="translate(90, 525)">
+    <text x="0" y="0" fill="#2997ff" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Mono', monospace" font-size="17" font-weight="600">rikeshvijay948.github.io/rikesh-portfolio</text>
+    <text x="750" y="0" fill="#6e6e73" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16">Python • FastAPI • Node.js • React • Computer Vision</text>
+  </g>
+</svg>
