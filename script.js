@@ -624,8 +624,9 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: 'Technical Skills & AI Stack', icon: 'fa-solid fa-sliders', tag: 'Section', action: () => scrollToSection('skills') },
       { name: 'Cattle Breed Recognition AI', icon: 'fa-solid fa-brain', tag: 'Project', action: () => scrollToSection('projects') },
       { name: 'ResQNet Disaster Management', icon: 'fa-solid fa-truck-medical', tag: 'Project', action: () => scrollToSection('projects') },
+      { name: 'Taskflow Pro Productivity Suite', icon: 'fa-solid fa-list-check', tag: 'Project', action: () => scrollToSection('projects') },
+      { name: 'EstateHub Real Estate Portal', icon: 'fa-solid fa-building', tag: 'Project', action: () => scrollToSection('projects') },
       { name: 'E-Commerce Web Application', icon: 'fa-solid fa-cart-shopping', tag: 'Project', action: () => scrollToSection('projects') },
-      { name: 'To-Do List Task Manager', icon: 'fa-solid fa-list-check', tag: 'Project', action: () => scrollToSection('projects') },
       { name: 'Education (B.E. CSE - CGPA 8.12)', icon: 'fa-solid fa-graduation-cap', tag: 'Section', action: () => scrollToSection('timeline') },
       { name: 'Certifications & Accreditations', icon: 'fa-solid fa-certificate', tag: 'Section', action: () => scrollToSection('certifications') },
       { name: 'Developer Console CLI', icon: 'fa-solid fa-terminal', tag: 'Utility', action: () => scrollToSection('terminal') },
@@ -688,11 +689,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('keydown', (e) => {
+      const activeTag = document.activeElement?.tagName?.toLowerCase();
+      const isInputActive = activeTag === 'input' || activeTag === 'textarea';
+
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault();
         backdrop.classList.contains('active') ? closePalette() : openPalette();
-      } else if (e.key === 'Escape' && backdrop.classList.contains('active')) {
-        closePalette();
+      } else if (!isInputActive && e.key === '?' && !e.ctrlKey && !e.metaKey) {
+        e.preventDefault();
+        openPalette();
+      } else if (e.key === 'Escape') {
+        if (backdrop.classList.contains('active')) closePalette();
+        if (mobileDrawer?.classList.contains('open')) {
+          mobileDrawer.classList.remove('open');
+          if (mobileToggle) mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        }
       }
     });
 
