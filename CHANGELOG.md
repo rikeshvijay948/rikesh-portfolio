@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [1.2.7] - 2026-11-18
+
+### Added
+- **Social Share Previews (`og-preview.svg`)**:
+  - Implemented 1200x630 vector Open Graph card with titanium dark aesthetic, project pills, and live URL branding.
+  - Linked `og:image` and `twitter:image` tags in `index.html`.
+- **Command Palette & Keyboard Enhancements**:
+  - Added *Taskflow Pro* and *EstateHub* actions to Command Palette navigation.
+  - Added global `?` shortcut to open Command Palette and enhanced `Escape` listener for mobile drawer dismissal.
+- **QA & Testing Matrix (`docs/TESTING.md`)**:
+  - Documented cross-browser compatibility matrix (Chrome, Safari, Firefox, Edge).
+  - Defined responsive viewport verification criteria and Lighthouse Web Vitals performance benchmarks.
+- **Package Sync**:
+  - Incremented portfolio package version to `1.2.7`.
+
 ## [1.2.6] - 2026-11-10
 
 ### Added
