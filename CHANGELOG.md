@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [1.2.8] - 2026-11-19
+
+### Added
+- **Internationalization & ARIA Landmark Enhancements**:
+  - Added `hreflang="x-default"` and `hreflang="en"` alternate tags for multilingual search engines.
+  - Linked `aria-current="page"` dynamic scroll-spy state and `aria-expanded` toggle state for assistive screen readers.
+- **Terminal Console Quick-Run Expansion**:
+  - Added dedicated chips for `certifications` and `contact` shell commands.
+  - Added automatic input re-focusing on quick suggestion chip invocation.
+- **API & Data Contracts Documentation (`docs/API_INTEGRATIONS.md`)**:
+  - Detailed REST contract schemas for Cattle Breed AI, ResQNet, EstateHub filtering, and Taskflow Pro Web Audio synthesis.
+- **Release Synchronization**:
+  - Updated package version to `v1.2.8` and refreshed `sitemap.xml` crawl date.
+
 ## [1.2.7] - 2026-11-18
 
 ### Added
