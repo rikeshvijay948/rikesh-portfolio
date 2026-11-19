@@ -229,9 +229,12 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${currentSectionId}`) {
-          link.classList.add('active');
+        const isCurrent = link.getAttribute('href') === `#${currentSectionId}`;
+        link.classList.toggle('active', isCurrent);
+        if (isCurrent) {
+          link.setAttribute('aria-current', 'page');
+        } else {
+          link.removeAttribute('aria-current');
         }
       });
     };
@@ -246,6 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileToggle && mobileDrawer) {
       mobileToggle.addEventListener('click', () => {
         const isOpen = mobileDrawer.classList.toggle('open');
+        mobileToggle.setAttribute('aria-expanded', String(isOpen));
         mobileToggle.innerHTML = isOpen
           ? '<i class="fa-solid fa-xmark"></i>'
           : '<i class="fa-solid fa-bars"></i>';
@@ -254,6 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileDrawer.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
           mobileDrawer.classList.remove('open');
+          mobileToggle.setAttribute('aria-expanded', 'false');
           mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
         });
       });
@@ -702,7 +707,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (backdrop.classList.contains('active')) closePalette();
         if (mobileDrawer?.classList.contains('open')) {
           mobileDrawer.classList.remove('open');
-          if (mobileToggle) mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+          if (mobileToggle) {
+            mobileToggle.setAttribute('aria-expanded', 'false');
+            mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+          }
         }
       }
     });
