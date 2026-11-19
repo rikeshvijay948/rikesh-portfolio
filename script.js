@@ -604,9 +604,11 @@ document.addEventListener('DOMContentLoaded', () => {
     suggestionPills.forEach(pill => {
       pill.addEventListener('click', () => {
         const cmd = pill.getAttribute('data-cmd');
+        if (!cmd) return;
         termInput.value = cmd;
         executeCommand(cmd);
         termInput.value = '';
+        termInput.focus();
       });
     });
   };
